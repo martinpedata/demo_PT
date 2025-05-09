@@ -1,0 +1,109 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    background-color: #f0e6ff;
+    color: #5e2d79;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 0 #000;
+    animation: colorShift 5s infinite;
+}
+
+.wobble-bot {
+    font-size: 3rem;
+    animation: wobble 0.5s infinite alternate;
+}
+
+.nonsense-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 5px dotted #ff00aa;
+}
+
+.nonsense-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.interdimensional-portal {
+    text-align: center;
+    margin: 3rem auto;
+}
+
+#flarx-btn {
+    background: linear-gradient(45deg, #00ffcc, #cc00ff);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#flarx-btn:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.portal-vortex {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+    border-radius: 50%;
+    margin: 1rem auto;
+    animation: spin 2s linear infinite;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@keyframes wobble {
+    from { transform: rotate(-10deg); }
+    to { transform: rotate(10deg); }
+}
+
+@keyframes colorShift {
+    0% { color: #fff; }
+    25% { color: #ff0; }
+    50% { color: #0ff; }
+    75% { color: #f0f; }
+    100% { color: #fff; }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .nonsense-text {
+        column-count: 1;
+    }
+}
